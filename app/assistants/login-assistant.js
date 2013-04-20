@@ -430,11 +430,11 @@ LoginAssistant.prototype.setupAutoSignInList = function(transaction, results, se
 LoginAssistant.prototype.handleSignIn = function(event)
 {
     if (!checkLoggedIn("") || logoutAllInProgress) 
-        if (!imServerReady) 
-        {
-            Mojo.Controller.errorDialog("Server not ready to connect, please Wait for few seconds and then try again.");
-            return;
-        }
+      //  if (!imServerReady) 
+        //{
+          //  Mojo.Controller.errorDialog("Server not ready to connect, please Wait for few seconds and then try again.");
+            //return;
+        //}
     
     if (_m_client.vibrateAlerts) 
     {
