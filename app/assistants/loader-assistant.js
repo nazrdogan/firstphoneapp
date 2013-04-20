@@ -20,12 +20,12 @@ LoaderAssistant.prototype.setup = function()
     
     
     /* do this if the user already logged out */
-    /*
+    
      if(!flag){
      this.controller.stageController.assistant.showScene('login');
      this.controller.stageController.assistant.removeScene('loader');
      }
-     */
+     
     this.controller.get('responseTextSpin').innerHTML = this.currentStatus + "...";
     
     
@@ -34,7 +34,7 @@ LoaderAssistant.prototype.setup = function()
         spinnerSize: 'large'
     }, this.model = 
     {
-        spinning: true
+        spinning: false
     });
 }
 
