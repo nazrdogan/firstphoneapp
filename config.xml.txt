@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"   xmlns:gap = "http://phonegap.com/ns/1.0"   id        = "com.phonegap.example"
+-    version   = "0.0.3">
+-
+-<name></name>
+-ChatAPP
+-<description>
+-
+-</description>
+-
+-<author href="https://example.com" email="nazrdogan@gmail.com">
+-Nazir Doðan
+-</author>
+-
+-</widget>
