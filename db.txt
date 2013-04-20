@@ -1,0 +1,65 @@
+ACCOUNTS
+_id integer primary key autoincrement		    // auto incremented id
+service tinyint unsigned                        //YAHOO = 1,MSN = 2,GTALK = 3,XMPP = 4,AIM = 5,ICQ = 6
+userid varchar(64) not null                     //vel@gmail.com
+password varchar(64)                            //password for the vel@gmail.com
+alias varchar(64                                //alias name for the useraccount if not mentioned then userid is alias
+rememberpassword tinyint unsigned               // 0 - disabled, 1 - enabled
+connectonstartup tinyint unsigned               // 0 - disabled, 1 - enabled
+server varchar(64)                              //domain name where to connect i.e. xmpp.geodesic.com
+presencecode tinyint unsigned                   // AVAILABLE = 1, BUSY = 2,AWAY = 3,CUSTOM = 4,INVISIBLE = 5,OFFLINE = 127
+statusmsg varchar(64)                           // the default status message which the user keeps, this also used to show the use state(connecting,authenticating,custome message)
+loginstate tinyint unsigned                     // 0 = Logged-in, 1 = Network Failure, 2 = Unable to connect to server, 3 = Connecting, 4 = Authenticating,
+                                                  5 = Retrieving Roster, 6 = Invalid username or password, 7 = Connection failure
+
+ROSTER
+_id integer primary key autoincrement		    // auto incremented id
+userid varchar(64) not null                     //user name which exists in the ACCOUNT vel@gmail.com
+userservice                                     //YAHOO = 1,MSN = 2,GTALK = 3,XMPP = 4,AIM = 5,ICQ = 6
+contactjid varchar(64)                          //satya@gtalk.com
+contactservice tinyint unsigned                 //YAHOO = 1,MSN = 2,GTALK = 3,XMPP = 4,AIM = 5,ICQ = 6
+contactalias varchar(64)                        //alias name of the contact
+contactsubscription tinyint unsigned            // NONE = 0, PENDING_IN = 1, PENDING_OUT = 2, BOTH = Byte.MAX_VALUE;
+groupname varchar(64)                           //group name to which the contact belongs
+presencecode tinyint unsigned                   //presence state of the contact AVAILABLE = 1, BUSY = 2,AWAY = 3,CUSTOM = 4,OFFLINE = 127
+statusmsg varchar(64)                           //contacts status message
+blocked tinyint unsigned                        // 0 - if not blocked, 1 - if blocked
+chatstate tinyint unsigned                      //1 - Msg not read,2 - In chat,127 - Not in chat
+typingstatus tinyint unsigned                   // 1 - typing 0 - not-typing
+messagerowid integer                            //reference to last row from the message table which the user has sent msg
+conferencestate tinyint unsigned                //0 - not in conference, 1 - invited, 2 - in conference
+buddypounce tinyint                             //0- no pounce, 1- pounce enabled
+latitude                                        // GPS latuitude
+longitude                                       // GPS longitude
+md5image varchar(32)                            //md5 sum of the contact image
+
+
+MESSAGE
+_id integer primary key autoincrement		    // auto incremented id
+userservice tinyint unsigned                    //user service YAHOO = 1,MSN = 2,GTALK = 3,XMPP = 4,AIM = 5,ICQ = 6
+userid varchar(64) not null                     //user name which exists in the ACCOUNT table vel@gmail.com
+isbyuser boolean                                //true when sent by user.
+contactjid varchar(64)                          //satya@gtalk.com
+messagebody varchar(256)                        //the message sent
+time timestamp                                  //date&time at which the message was sent. 
+
+
+PALM PRE =================================
+
+CREATE TABLE IF NOT EXISTS roster " 
+(_id integer primary key autoincrement," 
+userid varchar(64) not null," 
+userservice varchar(10) not null," 
+contactjid varchar(64)," 
+contactservice varchar(10) not null," 
+contactalias varchar(64)," 
+contactsubscription varchar(20)," 
+groupname varchar(64)," 
+presencecode tinyint unsigned," 
+statusmsg varchar(64)," 
+blocked varchar(5)," 
+chatstate tinyint unsigned," 
+typingstatus tinyint unsigned," 
+messagerowid integer," 
+conferencestate tinyint unsigned," 
+md5image varchar(32) );

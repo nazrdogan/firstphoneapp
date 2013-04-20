@@ -1,0 +1,39 @@
+<div class="palm-header">
+    Chat <span id="closeChatWindow" class="win-close-icon"></span>
+</div>
+<div class="palm-header-spacer">
+</div>
+<div>
+    <div id="buddyImageIcon" class="" style="float:left;padding-bottom:8px">
+    </div>
+    <div id="buddyAvatarIcon" style="float:right; padding-bottom:8px; display:none;">
+        <img id="chatAvatarImage" class="avatar-location-chat" width="34px" height="34px" src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAfADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDxaO2zjj0pwt+BxzxWlDEuFyP7v9ab5Ywv/Af60AZohHHHpQsOccelXNgyvpxSxoOPXigCoLcHHHpTGtuOnpWpFGCV/wCA5/M0rRrgf8B/maAML7P7UVpeUKKALcUowv8AwH+tIZBhfX5f61mxXOAPwpRP0/CgC0HGR+FCOAR+FU/O6fhSLNjH4UAaccoG322/zNBmAA/D+ZrOW4xj2xUb3P8ASgC15vvRWb59FAH/2Q==" /><img class="avatar-overlay-chat" width="42px" height="42px" src="images/avatar-frame.png" />
+    </div>
+    <div x-mojo-element="ListSelector" id="chatSelector" style="width:260px; float:left;display:none;">
+    </div>
+    <span id="buddyNameHeader" style="float:left;"></span>
+</div>
+<div>
+    <span id="buddyStatusMessage" class="" style="font-size:12px; margin:30px 0 2px 45px;display:block;"></span>
+</div>
+<div class="clear">
+</div>
+<div x-mojo-element="Scroller" id="chatMsgScroller" class="chat_history">
+    <div id="chatTextArea" x-mojo-element="TextField">
+    </div>
+    <div class="clear">
+    </div>
+    <div id="isTyping" style="font-size:12px; color:#999; ">
+    </div>
+</div>
+<div style="">
+    <div class="palm-row-wrapper textfield-group focused" style="width:100%; float:left;  height: 110px;">
+        <div x-mojo-element="TextField" id="sendChatTextArea" name="sendChatTextArea" style="width:80%; overflow: hidden;float:left; max-height:50px;">
+        </div>
+    </div>
+    <div id="send" class="sendBtnClass" style="display:none;">
+    </div>
+    <div>
+        <img id="sendBtn" class="overlay-send-btn" width="48px" height="31px" src="images/send.png" style="bottom:70px;"/>
+    </div>
+</div>

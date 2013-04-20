@@ -1,0 +1,9 @@
+{
+	"id": "com.geodesic.im",
+	"version": "1.0.2",
+	"vendor": "Geodesic Limited",
+	"type": "web",
+	"main": "index.html",
+	"title": "mundu IM",
+	"icon": "mundu.png"
+}

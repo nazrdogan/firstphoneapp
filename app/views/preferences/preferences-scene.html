@@ -1,0 +1,63 @@
+<div class="palm-body preferenceBody">
+    
+    <div class="palm-header">Preferences</div>
+
+    <div class="palm-header-spacer"></div>
+    
+    
+    <!--div class="palm-row">
+        <div class="palm-row-wrapper">
+            <div x-mojo-element="Button" id="removeAllAccounts" style="padding-bottom:3px"></div>
+        </div>
+    </div-->
+
+    <div class="palm-row preferenceText">
+        Status message
+        <div class="palm-row single">
+            <div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+                <div class="title">
+                    <div id="statusTxt" x-mojo-element="TextField" style="width:80%; font-size:17px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="palm-row preferenceText">
+        <div class="palm-row" x-mojo-tap-highlight="momentary">
+            <div class="palm-row-wrapper">
+                <div id="statusSelector" x-mojo-element="ListSelector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="palm-row">
+        <div class="palm-row-wrapper">
+            <div x-mojo-element="ToggleButton" id="showOfflineBuddies"></div>
+            <div class="preferenceText left truncating-text">Show offline buddies</div>
+        </div>
+    </div>
+
+    <div class="palm-row">
+        <div class="palm-row-wrapper">
+            <div x-mojo-element="ToggleButton" id="soundAlert"></div>
+            <div class="preferenceText left truncating-text">Sound alerts</div>
+        </div>
+    </div>
+    
+    <div class="palm-row">
+        <div class="palm-row-wrapper">
+            <div x-mojo-element="ToggleButton" id="vibrateAlert"></div>
+            <div class="preferenceText left truncating-text">Vibrate alerts</div>
+        </div>
+    </div>
+
+    
+    <div class="palm-row" style="display:none;">
+        <div class="palm-row-wrapper">
+            <div x-mojo-element="ToggleButton" id="darkTheme"></div>
+            <div class="preferenceText left truncating-text">Dark Theme</div>
+        </div>
+    </div>
+</div>

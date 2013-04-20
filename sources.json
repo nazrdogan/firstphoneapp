@@ -1,0 +1,70 @@
+[
+    {"source": "app/assistants/stage-assistant.js"},
+    {
+        "scenes": "splash",
+        "source": "app/assistants/splash-assistant.js"
+    },
+    {
+        "scenes": "login",
+        "source": "app/assistants/login-assistant.js"
+    },
+    {
+        "scenes": "buddies",
+        "source": "app/assistants/buddies-assistant.js"
+    },
+    {
+        "scenes": "scene2",
+        "source": "app/assistants/scene2-assistant.js"
+    },
+    {
+        "scenes": "chat",
+        "source": "app/assistants/chat-assistant.js"
+    },
+    {
+        "scenes": "loader",
+        "source": "app/assistants/loader-assistant.js"
+    },
+    {"source": "app/assistants/newgroup-assistant.js"},
+    {
+        "scenes": "notification",
+        "source": "app/assistants/notification-assistant.js"
+    },
+    {"source": "app/assistants/addBuddy-assistant.js"},
+    {"source": "app/assistants/changeStatus-assistant.js"},
+    {"source": "app/assistants/approveBuddy-assistant.js"},
+    {"source": "app/localization.js"},
+    {"source": "app/extra.js"},
+    {"source": "app/win_popup.js"},
+    {"source": "app/bar_buddy_list.js"},
+    {"source": "app/login.js"},
+    {"source": "app/clientbar.js"},
+    {"source": "app/mundu-lib.js"},
+    {"source": "app/mundu-main.js"},
+    {"source": "app/md5.js"},
+    {
+        "scenes": "addAccount",
+        "source": "app/assistants/addAccount-assistant.js"
+    },
+    {
+        "scenes": "selectServiceScene",
+        "source": "app/assistants/selectServiceScene-assistant.js"
+    },
+    {"source": "app/assistants/password-assistant.js"},
+    {"source": "app/assistants/status-assistant.js"},
+    {
+        "scenes": "preferences",
+        "source": "app/assistants/preferences-assistant.js"
+    },
+    {
+        "scenes": "about",
+        "source": "app/assistants/about-assistant.js"
+    },
+    {
+        "scenes": "addContact",
+        "source": "app/assistants/addContact-assistant.js"
+    },
+    {
+        "scenes": "help",
+        "source": "app/assistants/help-assistant.js"
+    }
+]

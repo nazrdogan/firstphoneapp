@@ -1,0 +1,57 @@
+<div class="palm-row multi-line" id='#{name}_example' x-Mojo-tap-highlight="momentary" x-mojo-focus-highlight = "true" style="line-height:15px; overflow:hidden; padding:2px 2px 2px 2px;">
+    <div>
+        <div>
+            #{-description}
+        </div>
+        <!--<div class="feedlist-info icon right" id="accountOption">
+		</div>-->
+        <table width="100%" align="center" border="0">
+            <tr>
+                <td width="15%">
+                    <!--div class="#{buddyClass}" style="padding-bottom:40px;">
+                        <img class="avatar-location-accountlist" width="34px" height="34px" src="data:image/png;base64,#{avatar}" />
+                        <img class="avatar-overlay-accountlist" width="42px" height="42px" src="images/avatar-frame.png" />
+                        </div>
+                    </div-->
+                        <div class="#{directory}" style="">
+                        </div>
+                </td>
+                <td>
+                    <div class="#{buddyClass} left">
+                        <div class="mojobuddy" style="display:none;">
+                            #{-name}
+                        </div>
+                        <div class="mojobuddy left">
+                            #{-displayName}
+                        </div>
+                        <div class="mojopassword" style="display:none">
+                            #{-password}
+                        </div>
+                        <div class="mojobuddylisthash" style="display:none">
+                            #{-buddylisthash}
+                        </div>
+                        <div class="bl_status" style="display:none;font-size:12px;" id="#{-name}StatusMessage">
+                            #{-personalStatusMessage}
+						</div>
+						<div x-mojo-element="Spinner" class="right" id="progressLoader"></div>
+                        <br>
+                        <div style="display:#{-loader}; font-size:12px;" class="left">
+						Signing In...
+                            <img src="images/loader.gif"/>
+                        </div>
+                        <div style="display:#{-networkError}; font-size:12px;">
+    						Unable to connect
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </td>
+                <td width="15%">
+                    <div style="margin-right:-10px;">
+                        <input id="signInCheck" type="checkbox" "#{-isItChecked}" style="height:48px; width:48px;" #{-isDisabled}>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
